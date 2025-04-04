@@ -36,11 +36,36 @@ fig_transmission = px.bar(
     y="Quantidade",
     title="Cars Sold by Exchange Type",
     text_auto=True,
-    color="Transmission",
-    color_change={
-        "Automatic": "red",
-        "Manual": "blue"
-    }
 )
 col3.plotly_chart(fig_transmission)
 
+fig_avg_price = px.line(
+    df_filtered.groupby(["Date", "Dealer_Region"])["Price ($)"].mean().reset_index(),
+    x="Date",
+    y="Price ($)",
+    color="Dealer_Region",
+    title="Evolution of the Average Price by Region"
+)
+col4.plotly_chart(fig_avg_price)
+
+
+df_filtered["Veiculo"] = df_filtered["Company"] + " " + df_filtered["Model"]
+
+top_veiculos = (
+    df_filtered["Veiculo"]
+    .value_counts()
+    .head(5)
+    .reset_index()
+)
+
+top_veiculos.columns = ["Veiculo", "Quantidade"]
+
+fig_top_veiculos = px.bar(
+    top_veiculos,
+    x="Quantidade",
+    y="Veiculo",
+    color="Veiculo",
+    orientation='h',
+    title="Top 5 Best Selling Vehicles (Brand + Model)"
+)
+col5.plotly_chart(fig_top_veiculos)
