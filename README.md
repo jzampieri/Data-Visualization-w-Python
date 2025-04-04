@@ -1,6 +1,13 @@
 # 📊 Data Visualization with Python
 ---
 
+## 🔗 Live Dashboard
+
+👉 [**Access the live dashboard here**](https://jzampieri-data-visualization-w-python-index-pbqvnv.streamlit.app/)  
+👉 [**Acesse o dashboard ao vivo aqui**](https://jzampieri-data-visualization-w-python-index-pbqvnv.streamlit.app/)
+
+---
+
 ## About this project
 
 This repository contains an example of how to create **interactive dashboards in Python** using **Streamlit** and **Plotly**.
