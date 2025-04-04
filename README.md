@@ -10,6 +10,8 @@ The dashboard loads and filters car sales data by month, showing:
 - 📅 Monthly billing per region (bar chart)
 - 🏢 Company revenue shares (pie chart)
 - ⚙️ Transmission type usage comparison (manual vs automatic)
+- 💰 Evolution of the average price by region (line chart)
+- 🚗 Top 5 best-selling vehicles (brand + model)
 
 ### 🚀 How it works
 
@@ -39,6 +41,8 @@ O dashboard carrega e filtra dados de vendas de carros por mês, exibindo:
 - 📅 Faturamento mensal por região (gráfico de barras)
 - 🏢 Participação no faturamento por companhia (gráfico de pizza)
 - ⚙️ Comparação do uso de câmbio manual vs automático (gráfico de barras)
+- 💰 Evolução do preço médio por região (gráfico de linha)
+- 🚗 Top 5 veículos mais vendidos (marca + modelo)
 
 ### 🚀 Como funciona
 
